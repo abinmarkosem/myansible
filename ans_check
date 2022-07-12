@@ -1,0 +1,11 @@
+./setup.sh -e 'backup_dest=/home/ansadm/abin2/' -b
+
+
+./setup.sh -e 'restore_backup_file=/home/ansadm/abin2/tower-backup-latest.tar.gz' -r
+
+chown awx -R /var/log/tower
+
+chown awx -R /var/lib/awx/projects/
+
+
+/setup.sh -e 'restore_backup_file=/home/ansadm/abin2/tower-backup-2022-07-12-23:22:52.tar.gz' -r
